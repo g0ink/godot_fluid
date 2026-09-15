@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://31uiqjkxy0cc"]
+
+[ext_resource type="Script" uid="uid://c278yt732m5id" path="res://Scripts/FluidManager.cs" id="1_manager"]
+
+[node name="FluidManager" type="Node2D" unique_id=1300307379]
+unique_name_in_owner = true
+z_index = 1
+script = ExtResource("1_manager")

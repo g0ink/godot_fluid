@@ -1,0 +1,16 @@
+<!-- 与当前 Godot 4.6.2 .NET 编辑器的 SDK 版本保持一致，确保程序集能被加载。 -->
+<Project Sdk="Godot.NET.Sdk/4.6.2">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <RootNamespace>GodotFluid</RootNamespace>
+    <!--
+      Godot 的 Inspector 会从程序集旁边的 XML 文档读取 C# 导出属性说明。
+      只有源码中的 /// 注释还不够；必须让 MSBuild 一并生成 FluidPlayground.xml。
+    -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>
+    <!-- 生命周期重写无需出现在 SDK 文档中；导出属性和公共 SDK API 仍保留 XML 注释。 -->
+    <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+</Project>

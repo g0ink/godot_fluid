@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bcfxocyq1g0yi"]
+
+[ext_resource type="Script" uid="uid://cqld4cn677vpb" path="res://Scripts/Main.cs" id="1_main"]
+[ext_resource type="Script" uid="uid://c278yt732m5id" path="res://Scripts/FluidManager.cs" id="2_manager"]
+
+[node name="FluidDemo" type="Node2D" unique_id=1428396664]
+script = ExtResource("1_main")
+
+[node name="FluidManager" type="Node2D" parent="." unique_id=1924806910]
+unique_name_in_owner = true
+z_index = 1
+script = ExtResource("2_manager")
+
+[node name="FallbackBackground" type="ColorRect" parent="." unique_id=2118956809]
+z_index = -10
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.027, 0.047, 0.09, 1)

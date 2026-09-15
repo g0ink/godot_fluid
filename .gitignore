@@ -1,0 +1,45 @@
+# Godot 生成缓存；导入数据库、编辑器状态和 Mono 临时程序集均可重建。
+.godot/
+.import/
+
+# C# / .NET 构建和 NuGet 解压缓存。
+bin/
+obj/
+.nuget-packages/
+*.user
+*.suo
+*.userprefs
+
+# Rider / Visual Studio / VS Code 的个人工作区配置。
+.idea/
+.vs/
+.vscode/
+*.sln.iml
+_ReSharper.Caches/
+
+# macOS / Windows 文件管理器产生的无关文件。
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Desktop.ini
+
+# 日志、临时文件和本地测试输出。
+*.log
+logs/
+tmp/
+Temp/
+.cache/
+
+# 本地导出包。若团队希望提交 export_presets.cfg，可删除对应规则。
+build/
+builds/
+dist/
+export/
+exports/
+export.cfg
+
+# 必须保留并提交：
+# - .nuget-offline/：与 Godot 4.6.2 匹配的离线 SDK 原始包。
+# - NuGet.Config：指定离线包源。
+# - *.import：Godot 资源旁的导入配置，可保证团队成员导入设置一致。
